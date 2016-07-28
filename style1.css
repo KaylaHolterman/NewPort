@@ -1,0 +1,39 @@
+body {
+    font-family: helvetica;
+    margin: 100px;
+    background-color: white;
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 12pt;
+}
+
+.logo {
+
+	padding-top:200px;
+
+}
+
+#clickable_div {
+	width:95px; height:150px;
+}
+
+
+#nav_menu{
+	width:120px; height:auto;}
+
+#wrap{ 
+	width:100px }
+
+h1 {
+	color: white;
+}

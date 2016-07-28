@@ -1,0 +1,139 @@
+body  {
+    
+    font-family: Helvetica;
+    cursor: crosshair;
+}
+body#page1{background-color:rgba(218,100,90,0.9);}
+body#page2{background-color:rgba(243,174,115,0.9);}
+body#page3{background-color:rgba(243,227,149,0.9);}
+body#page4{background-color:rgba(176,198,127,0.9);}
+body#page5{background-color:rgba(88,140,117,0.9);}
+body#page6{background-color:rgba(55,116,147,0.9);}
+
+
+.overlay {
+    height: 100%;
+    width:0px;
+    position: fixed;
+    z-index:1;
+    left:0px;
+    top:0px;
+    background-color: white;
+    overflow-x: hidden;
+    transition:0.7s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    text-align: right; 
+    margin-top: -330px; 
+}
+
+.overlay a {
+    text-decoration: none;
+    display: block;
+    font-size: 90px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+
+    
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 50px}
+    .close {
+        width: 95px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+  
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 12pt;
+}
+
+.overlay-content .brand, .home,.uxui,.photo,.web,.paint {
+    font-size: 100px;
+    text-align: right;
+    padding-right: 200px;
+    margin: 0 auto;
+    font-weight: 700;
+    cursor: pointer;
+}
+.home a {
+     color: rgba(218,100,90,0.9);
+}
+
+.brand a {
+    color: rgba(243,174,115,0.9);
+}
+
+.uxui a {
+    color: rgba(243,227,149,0.9);
+}
+
+.web a {
+    color: rgba(176,198,127,0.9);
+}
+
+.photo a {
+    color: rgba(88,140,117,0.9);
+}
+
+.paint a {
+   color: rgba(55,116,147,0.9);
+}
+
+.logo {
+    width: 150px;
+    padding: 10px;
+}
+
+h1
+{
+    color: white;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 300px;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 300px;
+    margin-top: -30px;
+}
+
+.icons {
+    padding-right: 300px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    float:right;
+    padding:10px;
+   
+}
+
+p {
+    color: white;
+    width: 40%;
+    font-size: 24px;
+}
