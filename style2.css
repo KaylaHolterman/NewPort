@@ -1,33 +1,49 @@
-body  {
-    
+body {
     font-family: Helvetica;
     cursor: crosshair;
 }
-body#page1{background-color:rgba(218,100,90,0.9);}
-body#page2{background-color:rgba(243,174,115,0.9);}
-body#page3{background-color:rgba(243,227,149,0.9);}
-body#page4{background-color:rgba(176,198,127,0.9);}
-body#page5{background-color:rgba(88,140,117,0.9);}
-body#page6{background-color:rgba(55,116,147,0.9);}
 
+body#page1 {
+    background-color: rgba(218,100,90,0.9);
+}
+
+body#page2 {
+    background-color: rgba(243,174,115,0.9);
+}
+
+body#page3 {
+    background-color: rgba(243,227,149,0.9);
+}
+
+body#page5 {
+    background-color: rgba(176,198,127,0.9);
+}
+
+body#page6 {
+    background-color: rgba(88,140,117,0.9);
+}
+
+body#page7 {
+    background-color: rgba(55,116,147,0.9);
+}
 
 .overlay {
     height: 100%;
-    width:0px;
+    width: 0;
     position: fixed;
-    z-index:1;
-    left:0px;
-    top:0px;
-    background-color: white;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #fff;
     overflow-x: hidden;
-    transition:0.7s;
+    transition: .7s;
 }
 
 .overlay-content {
     position: relative;
-    top: 25%; 
-    text-align: right; 
-    margin-top: -330px; 
+    top: 25%;
+    text-align: right;
+    margin-top: -330px;
 }
 
 .overlay a {
@@ -40,12 +56,18 @@ body#page6{background-color:rgba(55,116,147,0.9);}
     position: absolute;
     top: 20px;
     right: 45px;
+}
 
-    
+img.ux {
+    padding-top: 120px;
+    padding-left: 350px;
 }
 
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 50px}
+    .overlay a {
+        font-size: 50px;
+    }
+
     .close {
         width: 95px !important;
         top: 15px;
@@ -56,8 +78,7 @@ body#page6{background-color:rgba(55,116,147,0.9);}
 ul {
     list-style-type: none;
     text-decoration: none;
-    padding: 20px;
-  
+   
 }
 
 a {
@@ -67,19 +88,24 @@ a {
     font-size: 12pt;
 }
 
-.overlay-content .brand, .home,.uxui,.photo,.web,.paint {
+.overlay-content .brand1,.home,.uxui,.photo,.web,.paint {
     font-size: 100px;
     text-align: right;
-    padding-right: 200px;
     margin: 0 auto;
     font-weight: 700;
     cursor: pointer;
 }
-.home a {
-     color: rgba(218,100,90,0.9);
+
+.overlay-content .brand1 {
+    padding-right: 200px;
+    width: 100%;
 }
 
-.brand a {
+.home a {
+    color: rgba(218,100,90,0.9);
+}
+
+.brand1 a {
     color: rgba(243,174,115,0.9);
 }
 
@@ -87,16 +113,12 @@ a {
     color: rgba(243,227,149,0.9);
 }
 
-.web a {
+.photo a {
     color: rgba(176,198,127,0.9);
 }
 
-.photo a {
-    color: rgba(88,140,117,0.9);
-}
-
 .paint a {
-   color: rgba(55,116,147,0.9);
+    color: rgba(88,140,117,0.9);
 }
 
 .logo {
@@ -104,17 +126,25 @@ a {
     padding: 10px;
 }
 
-h1
-{
-    color: white;
+h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    padding-right: 0;
+    padding-top: -75px;
+}
+
+h3 {
+    color: #fff;
     font-size: 100px;
     text-align: right;
     padding-right: 300px;
+    margin-top: -50px;
 }
 
 h2 {
-    color: white;
-    font-size: 50px;
+    color: #fff;
+    font-size: 40px;
     text-align: right;
     padding-right: 300px;
     margin-top: -30px;
@@ -127,13 +157,134 @@ h2 {
 .icon {
     width: 40px;
     height: 40px;
-    float:right;
-    padding:10px;
-   
+    float: right;
+    padding: 10px;
 }
 
 p {
-    color: white;
+    color: #fff;
+    width: 50%;
+    font-size: 20px;
+}
+
+.bi h1 {
+    margin-top: -145px;
+    margin-left: 175px;
+    padding-right: 140px;
+}
+
+.bi p {
+    margin-left: 75px;
+    line-height: 30px;
     width: 40%;
-    font-size: 24px;
+    margin-top: -75px;
+    padding-left: 255px;
+    line-height: 20px;
+}
+
+.brand {
+    width: 250px;
+    opacity: .5;
+}
+
+.brand:hover {
+    opacity: 1;
+}
+
+#lightbox-img {
+    width: 400px;
+}
+
+.uxui1 h1 {
+    margin-top: -145px;
+    margin-left: 175px;
+    padding-right: 140px;
+}
+
+.uxui1 p {
+    margin-left: 100px;
+    line-height: 30px;
+    width: 40%;
+    margin-top: -75px;
+    padding-left: 255px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.foto p {
+    margin-left: 75px;
+    line-height: 30px;
+    width: 40%;
+    margin-top: -75px;
+    padding-left: 255px;
+    line-height: 20px;
+}
+
+.foto h1 {
+    margin-top: -145px;
+    margin-left: 175px;
+    padding-right: 140px;
+}
+
+.paint1 h1 {
+    margin-top: -145px;
+    margin-left: 175px;
+    padding-right: 140px;
+}
+
+.paint1 p {
+    margin-left: 75px;
+    line-height: 30px;
+    width: 40%;
+    margin-top: -75px;
+    padding-left: 255px;
+    line-height: 20px;
+}
+
+.lightboxEx {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    display: none;
+}
+
+.masonry-layout {
+    column-count: 3;
+    column-gap: 60px;
+    width: 60%;
+    padding-left: 325px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.masonry-layout__panel {
+    break-inside: avoid;
+    padding: 0;
+}
+
+.masonry-layout__panel-content {
+    padding: 0;
+}
+
+.opt {
+    text-align: right;
+    margin-top: -165px;
+    padding-right: 150px;
+}
+
+.opt1 {
+    text-align: right;
+    margin-top: -165px;
+    padding-right: 250px;
+}
+
+.opt2 {
+    text-align: right;
+    margin-top: -195px;
+    padding-right: 160px;
 }
